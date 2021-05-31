@@ -1,0 +1,12 @@
+/* General */
+
+/* Header */
+.contacts {
+    background-color: #336699;
+    color: white;
+}
+
+/* Top page slider */
+.top-page-slider h2 {
+    display: none;
+}

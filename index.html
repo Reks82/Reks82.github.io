@@ -1,11 +1,42 @@
 ﻿<!DOCTYPE html>
-
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>Test page</title>
-</head>
-<body>
-    <header>Test page</header>
-</body>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tests</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      body {
+        color: red;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png);
+        background-size: cover;
+        background-repeat: repeat-y;
+      }
+
+      .colored-div {
+        color: green;
+      }
+
+      .nested {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML and CSS tests</h1>
+    <div>
+      <p>first p</p>
+      <p>second p</p>
+      <div class="colored-div">
+        <p>first Nested p</p>
+        <p class="nested">second Nested p</p>
+        <p>third Nested p</p>
+      </div>
+      <p>Third p</p>
+    </div>
+  </body>
 </html>

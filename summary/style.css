@@ -1,0 +1,41 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background: rgb(255,210,236);
+    background: -moz-linear-gradient(104deg, rgba(255,210,236,0.2553221972382703) 0%, rgba(247,236,183,1) 50%, rgba(255,0,194,0.10966393393294815) 100%);
+    background: -webkit-linear-gradient(104deg, rgba(255,210,236,0.2553221972382703) 0%, rgba(247,236,183,1) 50%, rgba(255,0,194,0.10966393393294815) 100%);
+    background: linear-gradient(104deg, rgba(255,210,236,0.2553221972382703) 0%, rgba(247,236,183,1) 50%, rgba(255,0,194,0.10966393393294815) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd2ec",endColorstr="#ff00c2",GradientType=1); 
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px 30px;
+}
+
+header, 
+section {
+    border-bottom:  thick double #32a1ce;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+header img {
+    width: 128px;
+    height: 128px;
+    align-self: flex-end;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.skills em {
+    font-weight: bold;
+}
