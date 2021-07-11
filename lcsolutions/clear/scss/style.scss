@@ -1,0 +1,223 @@
+//---------------------------------------------------------------
+// Variables
+
+$primary-color: #336699;
+$secondary-color: #78abd8;
+
+/*--------------------------------------------------------------*/
+/* Fonts */
+
+@font-face {
+    font-family: 'PTSans';
+    src: url("../fonts/PTSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSans';
+    src: url("../fonts/PTSans-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSans';
+    src: url("../fonts/PTSans-Italic.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PTSans';
+    src: url("../fonts/PTSans-BoldItalic.ttf") format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*--------------------------------------------------------------------*/
+/* General */
+
+html, body, div, header, nav, section, p, ul, li, h1, h2, h3 {
+    box-sizing: border-box;
+} 
+
+html, p {
+    font-family: "PTSans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+}
+
+@media screen and (min-width: 1240px) {
+    .wrapper {
+        width: 1240px;
+        margin: 0 auto;
+    }
+}
+
+/*-----------------------------------------------------------------*/
+/* Header */
+
+header {
+    border-bottom: 3px solid $primary-color;
+}
+
+.contacts, .logo {
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 1240px) {
+    .contacts, .logo {
+        padding: 0 30px;
+    }
+}
+
+.contacts {
+    background-color: $primary-color;
+    color: white;
+    line-height: 1.8;
+    display: inline-block;
+    width: 100%;
+
+    .info {
+        margin: 5px 15px 5px 0px;
+        padding: 0;
+        text-align: center;
+
+        i {
+            margin-right: 4px;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    .info:hover, a:hover {
+        color: #0FC8ED;
+        transition: color 0.5s ease 0s;
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    .contacts {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .contacts {
+        justify-content: start;
+    }
+} 
+
+.logo {
+    img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+h1 {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------------------------------*/
+/* Navigation menu */
+
+nav {
+    position: relative;
+
+    .nav-menu-button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 36px;
+        height: 40px;
+        margin: 10px 15px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 32px;
+        background-color: $secondary-color;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    ul {
+        position: absolute;
+        right: 30px;
+        bottom: 3px;
+        display: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 0 8px;
+            line-height: 60px;
+        }
+
+        li:hover {
+            background-color: $secondary-color;
+            color: #fff;
+            transition: color, background-color 0.15s ease 0s;
+            cursor: pointer;
+        }
+
+        li:nth-child(1) {
+            background-color: $secondary-color;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .nav-menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/* Top page slider */
+
+.top-page-slider h2 {
+    display: none;
+}
+
+.temp-slider {
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .temp-slider {
+        height: 452px;
+
+        img {
+            height: 100%;
+        }
+    }
+}

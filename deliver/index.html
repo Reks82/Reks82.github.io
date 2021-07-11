@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliver website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Header menu -->
+        <div class="header-menu">
+            <div class="wrapper">
+                <div class="choose-language">
+                    <button class="choose-language-button">
+                        <span>English</span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="language-list">
+                        <li>
+                            <a href="#">eng</a>
+                        </li>
+                        <li>
+                            <a href="#">de</a>
+                        </li>
+                        <li>
+                            <a href="#">uk</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-contacts">
+                    <div class="contact-center">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span>Contact Center</span>
+                    </div>
+                    <div class="country-profile">
+                        <span>Country Profile</span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <ul class="country-profile-list">
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main menu -->
+        <div class="main-menu">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="img/dhl_logo.png" alt="dhl logotype">
+                </div>
+                <input class="switcher" id="menu" type="checkbox">
+                <label for="menu" class="open">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li class="menu-item">express</li>
+                        <li class="menu-item">parcel & ecommerce</li>
+                        <li class="menu-item selected">logistics</li>
+                        <li class="menu-item">mail</li>
+                        <li class="menu-item">press</li>
+                        <li class="menu-item">about</li>
+                    </ul>
+                    <label for="menu" class="close">
+                        <i class="fa fa-times"></i>
+                    </label>
+                </nav>
+                <div class="search">
+                    <div class="container">
+                        <input type="search" placeholder="Type to search">
+                        <button>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- Header info -->
+        <section class="header-info">
+            <div class="wrapper">
+                <h1>We Deliver With Speed</h1>
+                <hr>
+                <p>When an unknown printer took a galley of type and scrambled <br>
+                it to make a type specimen book. It has survived not only five centuries</p>
+                <ul>
+                    <li>amazing</li>
+                    <li>.</li>
+                    <li>quick</li>
+                    <li>.</li>
+                    <li>24/7 supports</li>
+                </ul>
+                <div class="buttons">
+                    <button>Learn More</button>
+                    <button>dhl worldwide</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Services section -->
+        <section class="services">
+            <div class="wrapper">
+                <h2>Awesome Services</h2>
+                <p class="background-text">Services</p>
+                <!-- Services cards -->
+                <div class="container">
+                    <article class="card">
+                        <img src="img/express-services.png" alt="The service man takes a package from the delivery car">
+                        <h3>Express Services</h3>
+                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                        <a href="#">
+                            Read More
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <img src="img/parcel-and-ecommerce.png" alt="The man delivering the package">
+                        <h3>parcel & ecommerce</h3>
+                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                        <a href="#">
+                            Read More
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <img src="img/freight-transport.png" alt="The man delivers the packaje on a scooter">
+                        <h3>frieght transport</h3>
+                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                        <a href="#">
+                            Read More
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                    <form action="" method="get" class="form-location">
+                        <h3>DHl Worldwide</h3>
+                        <hr>
+                        <p>When an unknown prot printer type and scra</p>
+                        <div class="input-location">
+                            <select name="location" id="location-select">
+                                <option value="en">England</option>
+                                <option value="de">Deuchland</option>
+                                <option value="ua">Ukraine</option>
+                            </select>
+                        </div>                      
+                        <button type="submit" class="button-explore">explore</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="background-image"></div>
+            <h2>One of the best international service provider</h2>
+            <button class="slider-play-button">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </button>
+            <!-- Slider -->
+            <ul class="about-slider">
+                <li class="slider-item">
+                    <article>
+                        <img src="img/aerospace-provider.png" alt="Two mans near the dhl truck">
+                        <div class="text-area">
+                            <h3>Aerospace provider</h3>
+                            <ul>
+                                <li>When an unknown printer took.</li>
+                                <li>Make a type specimen book.</li>
+                                <li>It has survived.</li>
+                                <li>Airlines unknown specimen.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li class="slider-item">
+                    <article>
+                        <img src="img/poppins-proved.png" alt="Two mans near the dhl truck">
+                        <div class="text-area">
+                            <h3>Poppins proved</h3>
+                            <ul>
+                                <li>When an unknown printer took.</li>
+                                <li>Make a type specimen book.</li>
+                                <li>It has survived.</li>
+                                <li>Airlines unknown specimen.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li class="slider-item">
+                    <article>
+                        <img src="img/airline-cpecimen.png" alt="Two mans near the dhl truck">
+                        <div class="text-area">
+                            <h3>Airline Specimen</h3>
+                            <ul>
+                                <li>When an unknown printer took.</li>
+                                <li>Make a type specimen book.</li>
+                                <li>It has survived.</li>
+                                <li>Airlines unknown specimen.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="express-logistics">
+            <h2 hidden>Express and logisticks section</h2>
+            <div class="wrapper">
+                <div class="selection-block">
+                    <div class="top-buttons">
+                        <div class="radio-button">
+                            <input type="radio" id="express" name="group-select" value="express">
+                            <label for="express" class="unselectable">express</label>
+                        </div>
+                        <div class="radio-button">
+                            <input type="radio" id="logistics" name="group-select" value="logistics" checked> 
+                            <label for="logistics" class="unselectable">logistics</label>
+                        </div>
+                    </div>
+                    <ul class="dropdown-links">
+                        <li class="dropdown-item">
+                            <button class="dropdown-button">track your shipment</button>
+                            <div class="dropdown-list">
+                                <h3>International Services to Another Country</h3>
+                                <ul>
+                                    <li><a href="#">Emergency</a></li>
+                                    <li><a href="#">Time critical</a></li>
+                                    <li><a href="#">Less urgent</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <button class="dropdown-button">track your shipment</button>
+                            <div class="dropdown-list">
+                                <h3>International Services to Another Country</h3>
+                                <ul>
+                                    <li><a href="#">Emergency</a></li>
+                                    <li><a href="#">Time critical</a></li>
+                                    <li><a href="#">Less urgent</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <button class="dropdown-button">track your shipment</button>
+                            <div class="dropdown-list">
+                                <h3>International Services to Another Country</h3>
+                                <ul>
+                                    <li><a href="#">Emergency</a></li>
+                                    <li><a href="#">Time critical</a></li>
+                                    <li><a href="#">Less urgent</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <button class="dropdown-button">track your shipment</button>
+                            <div class="dropdown-list">
+                                <h3>International Services to Another Country</h3>
+                                <ul>
+                                    <li><a href="#">Emergency</a></li>
+                                    <li><a href="#">Time critical</a></li>
+                                    <li><a href="#">Less urgent</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="styled-image">
+                    <div class="image-wrapper">
+                        <img src="img/dhl-employees.png" alt="dhl employees">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="wrapper">
+                <article>
+                    <h2>Excellence. Simply delivered.</h2>
+                    <p>International express deliveries; global freight forwarding by air, sea, road and rail;
+                        warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;
+                        and other customized logistic services – with everything DHL does, we <br>
+                        help connect people and improve their lives.</p>
+                </article>
+                <button class="learn-more-button">learn more</button>
+            </div>
+        </section>
+
+        <section class="clients">
+            <ul class="wrapper">
+                <li>
+                    <a href="#">
+                        <img src="img/themeforest-logo.png" alt="themeforest logotype">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/photodune-logo.png" alt="photodune logotype">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/graphicriver-logo.png" alt="graphicriver logotype">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/codecanyon-logo.png" alt="codecanyon logotype">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <section class="contact-center">
+                <h3>contact center</h3>
+                <ul>
+                    <li>
+                        <a href="#">dhl express</a>
+                    </li>
+                    <li>
+                        <a href="#">dhl parcel & ecommerce</a>
+                    </li>
+                    <li>
+                        <a href="#">dhl global forwarding</a>
+                    </li>
+                    <li>
+                        <a href="#">dhl freight</a>
+                    </li>
+                    <li>
+                        <a href="#">dhl supply chain</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="about-us">
+                <h3>about us</h3>
+                <ul>
+                    <li>
+                        <a href="#">partnerships</a>
+                    </li>
+                    <li>
+                        <a href="#">company portrait</a>
+                    </li>
+                    <li>
+                        <a href="#">dhl global forwarding</a>
+                    </li>
+                    <li>
+                        <a href="#">green solutions</a>
+                    </li>
+                    <li>
+                        <a href="#">innovation</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="social-media">
+                <h3>social media</h3>
+                <ul>
+                    <li>
+                        <a href="#">facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">dribbble</a>
+                    </li>
+                    <li>
+                        <a href="#">behance</a>
+                    </li>
+                    <li>
+                        <a href="#">gmail</a>
+                    </li>
+                    <li>
+                        <a href="#">twitter</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
+    </footer>
+</body>
+</html>
