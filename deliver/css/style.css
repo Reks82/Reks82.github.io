@@ -284,6 +284,7 @@ body {
   cursor: pointer;
 }
 .main-menu .wrapper nav ul a {
+  color: #ba0000;
   text-decoration: none;
 }
 .main-menu .wrapper nav ul a:visited {
@@ -535,6 +536,9 @@ body {
     height: 700px;
     background-size: cover;
   }
+  .header-info .wrapper {
+    max-width: 800px;
+  }
   .header-info .wrapper h1 {
     padding-top: 170px;
     width: 350px;
@@ -558,7 +562,7 @@ body {
     align-items: center;
   }
   .header-info .wrapper h1 {
-    padding-top: 70px;
+    padding-top: 50px;
     width: 325px;
     font-size: 40px;
     text-align: center;
@@ -755,6 +759,121 @@ body {
   color: #ba0000;
 }
 
+@media screen and (max-width: 1200px) {
+  .services .wrapper .container {
+    justify-content: space-around;
+  }
+  .services .wrapper .container .card {
+    width: 230px;
+  }
+  .services .wrapper .container .card img {
+    height: auto;
+  }
+  .services .wrapper .container .card h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .services .wrapper .container .form-location {
+    width: 230px;
+  }
+  .services .wrapper .container .form-location h3 {
+    padding-bottom: 10px;
+  }
+  .services .wrapper .container .form-location p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .services .wrapper .container .form-location .input-location {
+    margin-top: 35px;
+  }
+  .services .wrapper .container .form-location .input-location select {
+    width: 172px;
+    padding: 0 18px;
+  }
+  .services .wrapper .container .form-location .button-explore {
+    width: 150px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services .wrapper {
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .services .wrapper h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .services .wrapper p.background-text {
+    top: 5px;
+    width: 100%;
+    font-size: 150px;
+    text-align: center;
+  }
+  .services .wrapper .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services .wrapper .container .card {
+    width: 270px;
+    margin: 10px;
+  }
+  .services .wrapper .container .card img {
+    height: auto;
+  }
+  .services .wrapper .container .card h3 {
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+  .services .wrapper .container .form-location {
+    width: 270px;
+    margin: 10px;
+  }
+  .services .wrapper .container .form-location h3 {
+    padding-bottom: 18px;
+  }
+  .services .wrapper .container .form-location p {
+    font-size: 14px;
+    margin-top: 26px;
+  }
+  .services .wrapper .container .form-location .input-location {
+    margin-top: 35px;
+  }
+  .services .wrapper .container .form-location .input-location select {
+    width: 210px;
+    padding: 0 18px;
+  }
+  .services .wrapper .container .form-location .button-explore {
+    width: 150px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services .wrapper h2 {
+    font-size: 36px;
+  }
+  .services .wrapper p.background-text {
+    top: 20px;
+    font-size: 100px;
+  }
+  .services .wrapper .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .services .wrapper .container .card {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services .wrapper p.background-text {
+    top: 40px;
+    font-size: 60px;
+  }
+}
 .about {
   position: relative;
   display: flex;
