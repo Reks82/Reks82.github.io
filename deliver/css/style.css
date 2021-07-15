@@ -955,11 +955,17 @@ body {
   list-style-type: none;
 }
 .about .slider-container .slider-line .slider-item .text-area ul li {
+  position: relative;
   margin-top: 11px;
   padding-left: 20px;
-  background-image: url("../img/arrow-right.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+}
+.about .slider-container .slider-line .slider-item .text-area ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  border: 7px solid transparent;
+  border-left-color: #ffcc00;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1397,6 +1403,7 @@ footer .wrapper section ul {
   margin-top: 35px;
 }
 footer .wrapper section ul li {
+  position: relative;
   margin-bottom: 10px;
   padding-left: 10px;
   font-size: 14px;
@@ -1404,6 +1411,14 @@ footer .wrapper section ul li {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   word-spacing: 1px;
+}
+footer .wrapper section ul li::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  border: 5px solid transparent;
+  border-left-color: #ba0000;
 }
 footer .wrapper section ul li a {
   color: #777777;
