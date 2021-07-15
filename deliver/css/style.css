@@ -79,6 +79,10 @@ body {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 100%;
@@ -226,6 +230,18 @@ body {
   .header-menu {
     font-size: 11px;
     font-weight: 500;
+  }
+  .header-menu .wrapper .choose-language .language-list {
+    width: 52px;
+  }
+  .header-menu .wrapper .choose-language:hover .language-list {
+    height: 36px;
+  }
+  .header-menu .wrapper .header-contacts .country-profile .country-profile-list {
+    width: 98px;
+  }
+  .header-menu .wrapper .header-contacts .country-profile:hover .country-profile-list {
+    height: 36px;
   }
 }
 .main-menu {
