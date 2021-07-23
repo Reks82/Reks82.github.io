@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliver website</title>
+    <link rel="icon" href="./img/dhl_icon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,6 +17,7 @@
         <!-- Header menu -->
         <div class="header-menu">
             <div class="wrapper">
+                <!-- Choose language custom dropdown -->
                 <div class="choose-language">
                     <button class="choose-language-button">
                         <span>English</span>
@@ -33,14 +35,18 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Header contacts block -->
                 <div class="header-contacts">
-                    <div class="contact-center">
+                    <button class="contact-center-button">
                         <i class="fa fa-users" aria-hidden="true"></i>
                         <span>Contact Center</span>
-                    </div>
+                    </button>
+                    <!-- Country profile custom dropdown -->
                     <div class="country-profile">
-                        <span>Country Profile</span>
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <button class="country-profile-button">
+                            <span>Country Profile</span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
                         <ul class="country-profile-list">
                             <li>item</li>
                             <li>item</li>
@@ -50,16 +56,20 @@
                 </div>
             </div>
         </div>
+
         <!-- Main menu -->
         <div class="main-menu">
             <div class="wrapper">
+                <!-- Header main logotype block -->
                 <div class="logo">
                     <img src="img/dhl_logo.png" alt="dhl logotype">
                 </div>
+                <!-- Navigation menu open button/switcher (input-checkbox) when the menu is minimized  -->
                 <input class="switcher" id="menu" type="checkbox">
                 <label for="menu" class="open">
                     <i class="fa fa-bars"></i>
                 </label>
+                <!-- Navigation menu -->
                 <nav>
                     <ul>
                         <li class="menu-item">
@@ -81,10 +91,12 @@
                             <a href="#">about</a>
                         </li>
                     </ul>
+                    <!-- Navigation menu close button/switcher  -->
                     <label for="menu" class="close">
                         <i class="fa fa-times"></i>
                     </label>
                 </nav>
+                <!-- Search block -->
                 <div class="search">
                     <div class="container">
                         <input type="search" placeholder="Type to search">
@@ -95,6 +107,7 @@
                 </div>
             </div> 
         </div>
+
         <!-- Header info -->
         <section class="header-info">
             <div class="wrapper">
@@ -102,6 +115,7 @@
                 <hr>
                 <p>When an unknown printer took a galley of type and scrambled <br>
                 it to make a type specimen book. It has survived not only five centuries</p>
+                <!-- Text styled as list -->
                 <ul>
                     <li>amazing</li>
                     <li>quick</li>
@@ -121,8 +135,8 @@
             <div class="wrapper">
                 <h2>Awesome Services</h2>
                 <p class="background-text">Services</p>
-                <!-- Services cards -->
-                <div class="container">
+                <!-- Services cards block -->
+                <div class="cards">
                     <article class="card">
                         <img src="img/express-services.png" alt="The service man takes a package from the delivery car">
                         <h3>Express Services</h3>
@@ -150,6 +164,7 @@
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                         </a>
                     </article>
+                    <!-- The last card is presented as a form -->
                     <form method="get" class="form-location">
                         <h3>DHl Worldwide</h3>
                         <hr>
@@ -288,7 +303,7 @@
                         </li>
                     </ul>   
                 </div>
-                <!-- Styled image -->
+                <!-- Styled image block -->
                 <div class="styled-image">
                     <div class="image-wrapper">
                         <img src="img/dhl-employees.png" alt="dhl employees">
@@ -342,7 +357,7 @@
 
     <footer>
         <div class="wrapper">
-            <!-- footer link sections -->
+            <!-- footer links sections (each section is a column)-->
             <section class="contact-center">
                 <h3>contact center</h3>
                 <ul>

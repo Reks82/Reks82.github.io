@@ -58,6 +58,8 @@ table {
   box-sizing: border-box;
 }
 
+/* general styles */
+/*------------------------------------------------------------------------*/
 html {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -109,6 +111,8 @@ body {
   user-select: none;
 }
 
+/* header-menu */
+/*--------------------------------------------------------------*/
 .header-menu {
   background-color: #ba0000;
   height: 50px;
@@ -118,9 +122,18 @@ body {
 }
 .header-menu .wrapper {
   height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-menu .wrapper .choose-language {
   position: relative;
@@ -140,6 +153,7 @@ body {
   width: 60px;
   height: 0;
   overflow: hidden;
+  -webkit-transition: height ease 0.3s;
   transition: height ease 0.3s;
 }
 .header-menu .wrapper .choose-language .language-list li a {
@@ -167,28 +181,54 @@ body {
   background-color: #ba0000;
 }
 .header-menu .wrapper .header-contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.header-menu .wrapper .header-contacts .contact-center {
+.header-menu .wrapper .header-contacts .contact-center-button {
   margin-right: 30px;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.header-menu .wrapper .header-contacts .contact-center i {
+.header-menu .wrapper .header-contacts .contact-center-button i {
   margin-right: 3px;
 }
-.header-menu .wrapper .header-contacts .contact-center:hover {
+.header-menu .wrapper .header-contacts .contact-center-button:hover {
   color: #ffcc00;
   cursor: pointer;
 }
 .header-menu .wrapper .header-contacts .country-profile {
   position: relative;
 }
-.header-menu .wrapper .header-contacts .country-profile:hover span, .header-menu .wrapper .header-contacts .country-profile:hover i {
-  color: #ffcc00;
+.header-menu .wrapper .header-contacts .country-profile .country-profile-button {
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 1px;
+  color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.header-menu .wrapper .header-contacts .country-profile .country-profile-button:hover {
+  color: #ffcc00;
 }
 .header-menu .wrapper .header-contacts .country-profile .country-profile-list {
   position: absolute;
@@ -196,6 +236,7 @@ body {
   border: none;
   background-color: #ba0000;
   height: 0;
+  -webkit-transition: height ease 0.3s;
   transition: height ease 0.3s;
   overflow: hidden;
 }
@@ -222,7 +263,7 @@ body {
     font-size: 13px;
     font-weight: 300;
   }
-  .header-menu .wrapper .header-contacts .contact-center {
+  .header-menu .wrapper .header-contacts .contact-center-button {
     margin-right: 10px;
   }
 }
@@ -237,6 +278,15 @@ body {
   .header-menu .wrapper .choose-language:hover .language-list {
     height: 36px;
   }
+  .header-menu .wrapper .header-contacts .contact-center-button {
+    letter-spacing: 0.5px;
+  }
+  .header-menu .wrapper .header-contacts .contact-center-button i {
+    margin-right: 0;
+  }
+  .header-menu .wrapper .header-contacts .country-profile .country-profile-button {
+    letter-spacing: 0.5px;
+  }
   .header-menu .wrapper .header-contacts .country-profile .country-profile-list {
     width: 98px;
   }
@@ -244,14 +294,25 @@ body {
     height: 36px;
   }
 }
+/* Main menu (nav)*/
+/*-----------------------------------------------------------------------*/
 .main-menu {
   background-color: #ffcc00;
 }
 .main-menu .wrapper {
   height: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-menu .wrapper .logo, .main-menu .wrapper .search {
   min-width: 200px;
@@ -273,9 +334,18 @@ body {
   color: #ba0000;
 }
 .main-menu .wrapper nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -283,8 +353,14 @@ body {
   text-transform: uppercase;
 }
 .main-menu .wrapper nav ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   padding: 0 12px;
   margin: 0 11px;
@@ -308,17 +384,36 @@ body {
 }
 .main-menu .wrapper .search {
   width: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-menu .wrapper .search .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ba0000;
   height: 50px;
   border-radius: 50px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .main-menu .wrapper .search .container:hover {
@@ -340,12 +435,19 @@ body {
   font-size: 14px;
   color: #fff;
   width: 0px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .main-menu .wrapper .search .container input::-webkit-input-placeholder {
   color: #c2c2c2;
 }
 .main-menu .wrapper .search .container input::-ms-input-placeholder {
+  color: #c2c2c2;
+}
+.main-menu .wrapper .search .container input::-moz-placeholder {
+  color: #c2c2c2;
+}
+.main-menu .wrapper .search .container input:-ms-input-placeholder {
   color: #c2c2c2;
 }
 .main-menu .wrapper .search .container input::placeholder {
@@ -361,6 +463,7 @@ body {
   border: 5px solid #ba0000;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -419,10 +522,15 @@ body {
     font-size: 14px;
     font-weight: 500;
     z-index: 10;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .main-menu .wrapper nav ul {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
     width: 100%;
     margin-top: 80px;
@@ -470,8 +578,11 @@ body {
     line-height: 26px;
   }
 }
+/* Header info section */
+/* ---------------------------------------------------------------------*/
 .header-info {
   height: 800px;
+  background: -webkit-linear-gradient(45deg, #ba0000 20%, transparent 70%, transparent), url("../img/skier-and-dhl-delivery-car.png");
   background: linear-gradient(45deg, #ba0000 20%, transparent 70%, transparent), url("../img/skier-and-dhl-delivery-car.png");
   background-position: center;
 }
@@ -501,8 +612,14 @@ body {
 }
 .header-info .wrapper ul {
   width: 470px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 20px;
   font-weight: 700;
   word-spacing: 10px;
@@ -532,6 +649,7 @@ body {
   text-align: center;
   margin-right: 14px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .header-info .wrapper .buttons button:first-child {
@@ -573,9 +691,19 @@ body {
 }
 @media screen and (max-width: 600px) {
   .header-info .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-info .wrapper h1 {
     padding-top: 50px;
@@ -598,8 +726,15 @@ body {
   .header-info .wrapper ul {
     width: auto;
     margin: 20px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 14px;
   }
   .header-info .wrapper ul li {
@@ -613,14 +748,26 @@ body {
     margin-right: 10px;
   }
   .header-info .wrapper .buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header-info .wrapper .buttons button {
     margin: 10px 0;
   }
 }
+/* Services section */
+/* --------------------------------------------------------------------------- */
 .services .wrapper {
   position: relative;
   height: 732px;
@@ -644,19 +791,28 @@ body {
   text-transform: uppercase;
   color: #ba0000;
 }
-.services .wrapper .container {
+.services .wrapper .cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.services .wrapper .container .card {
+.services .wrapper .cards .card {
   width: 270px;
 }
-.services .wrapper .container .card img {
+.services .wrapper .cards .card img {
   width: 100%;
   height: 180px;
 }
-.services .wrapper .container .card h3 {
+.services .wrapper .cards .card h3 {
   padding-top: 24px;
   padding-bottom: 12px;
   font-size: 20px;
@@ -665,12 +821,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.services .wrapper .container .card p {
+.services .wrapper .cards .card p {
   color: #777777;
   font-size: 16px;
   line-height: 1.6;
 }
-.services .wrapper .container .card a {
+.services .wrapper .cards .card a {
   display: block;
   margin-top: 16px;
   cursor: pointer;
@@ -680,21 +836,22 @@ body {
   letter-spacing: 1px;
   color: #232322;
   text-decoration: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.services .wrapper .container .card a:hover {
+.services .wrapper .cards .card a:hover {
   color: #ba0000;
 }
-.services .wrapper .container .card a i {
+.services .wrapper .cards .card a i {
   color: #ba0000;
 }
-.services .wrapper .container .form-location {
+.services .wrapper .cards .form-location {
   width: 270px;
   height: 339px;
   background-color: #ba0000;
   padding: 29px;
 }
-.services .wrapper .container .form-location h3 {
+.services .wrapper .cards .form-location h3 {
   padding-top: 0;
   padding-bottom: 18px;
   font-size: 20px;
@@ -703,22 +860,22 @@ body {
   letter-spacing: 1px;
   color: #fff;
 }
-.services .wrapper .container .form-location hr {
+.services .wrapper .cards .form-location hr {
   width: 70px;
   border: 1px solid #ffcc00;
   margin-left: 0;
 }
-.services .wrapper .container .form-location p {
+.services .wrapper .cards .form-location p {
   font-size: 16px;
   line-height: 1.6;
   color: #fff;
   margin-top: 26px;
 }
-.services .wrapper .container .form-location .input-location {
+.services .wrapper .cards .form-location .input-location {
   position: relative;
   margin-top: 35px;
 }
-.services .wrapper .container .form-location .input-location select {
+.services .wrapper .cards .form-location .input-location select {
   width: 210px;
   height: 50px;
   padding: 0 18px;
@@ -730,16 +887,18 @@ body {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
-.services .wrapper .container .form-location .input-location select:focus {
+.services .wrapper .cards .form-location .input-location select:focus {
   background-color: #9d0000;
 }
-.services .wrapper .container .form-location .input-location option {
+.services .wrapper .cards .form-location .input-location option {
   text-transform: capitalize;
 }
-.services .wrapper .container .form-location .input-location:before {
+.services .wrapper .cards .form-location .input-location:before {
   content: "";
   font-family: "FontAwesome";
   position: absolute;
@@ -753,7 +912,7 @@ body {
   text-align: center;
   pointer-events: none;
 }
-.services .wrapper .container .form-location .button-explore {
+.services .wrapper .cards .form-location .button-explore {
   width: 150px;
   height: 50px;
   margin-top: 20px;
@@ -765,10 +924,11 @@ body {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
-.services .wrapper .container .form-location .button-explore:hover {
+.services .wrapper .cards .form-location .button-explore:hover {
   box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
   background: #ffcc00;
   border-color: #ffcc00;
@@ -776,38 +936,40 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .services .wrapper .container {
-    justify-content: space-around;
+  .services .wrapper .cards {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
-  .services .wrapper .container .card {
+  .services .wrapper .cards .card {
     width: 230px;
   }
-  .services .wrapper .container .card img {
+  .services .wrapper .cards .card img {
     height: auto;
   }
-  .services .wrapper .container .card h3 {
+  .services .wrapper .cards .card h3 {
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 18px;
   }
-  .services .wrapper .container .form-location {
+  .services .wrapper .cards .form-location {
     width: 230px;
   }
-  .services .wrapper .container .form-location h3 {
+  .services .wrapper .cards .form-location h3 {
     padding-bottom: 10px;
   }
-  .services .wrapper .container .form-location p {
+  .services .wrapper .cards .form-location p {
     font-size: 14px;
     margin-top: 20px;
   }
-  .services .wrapper .container .form-location .input-location {
+  .services .wrapper .cards .form-location .input-location {
     margin-top: 35px;
   }
-  .services .wrapper .container .form-location .input-location select {
+  .services .wrapper .cards .form-location .input-location select {
     width: 172px;
     padding: 0 18px;
   }
-  .services .wrapper .container .form-location .button-explore {
+  .services .wrapper .cards .form-location .button-explore {
     width: 150px;
     margin-top: 20px;
   }
@@ -828,47 +990,52 @@ body {
     font-size: 150px;
     text-align: center;
   }
-  .services .wrapper .container {
-    flex-wrap: wrap;
-    justify-content: center;
+  .services .wrapper .cards {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .services .wrapper .container .card {
+  .services .wrapper .cards .card {
     width: 270px;
     margin: 10px;
   }
-  .services .wrapper .container .card img {
+  .services .wrapper .cards .card img {
     height: auto;
   }
-  .services .wrapper .container .card h3 {
+  .services .wrapper .cards .card h3 {
     padding-top: 24px;
     padding-bottom: 12px;
     font-size: 18px;
   }
-  .services .wrapper .container .card p {
+  .services .wrapper .cards .card p {
     font-size: 14px;
   }
-  .services .wrapper .container .card a {
+  .services .wrapper .cards .card a {
     font-size: 15px;
   }
-  .services .wrapper .container .form-location {
+  .services .wrapper .cards .form-location {
     width: 270px;
     margin: 10px;
   }
-  .services .wrapper .container .form-location h3 {
+  .services .wrapper .cards .form-location h3 {
     padding-bottom: 18px;
   }
-  .services .wrapper .container .form-location p {
+  .services .wrapper .cards .form-location p {
     font-size: 14px;
     margin-top: 26px;
   }
-  .services .wrapper .container .form-location .input-location {
+  .services .wrapper .cards .form-location .input-location {
     margin-top: 35px;
   }
-  .services .wrapper .container .form-location .input-location select {
+  .services .wrapper .cards .form-location .input-location select {
     width: 210px;
     padding: 0 18px;
   }
-  .services .wrapper .container .form-location .button-explore {
+  .services .wrapper .cards .form-location .button-explore {
     width: 150px;
     margin-top: 20px;
   }
@@ -881,11 +1048,11 @@ body {
     top: 20px;
     font-size: 100px;
   }
-  .services .wrapper .container {
+  .services .wrapper .cards {
     max-width: 800px;
     margin: 0 auto;
   }
-  .services .wrapper .container .card {
+  .services .wrapper .cards .card {
     margin-bottom: 40px;
   }
 }
@@ -895,18 +1062,32 @@ body {
     font-size: 60px;
   }
 }
+/* About section */
+/*-----------------------------------------------------------------*/
 .about {
   position: relative;
   height: 700px;
   margin-bottom: 350px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-linear-gradient(bottom, rgba(255, 204, 0, 0.4), transparent), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/dhl-transport-vehicles.png");
   background: linear-gradient(0deg, rgba(255, 204, 0, 0.4), transparent), linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/dhl-transport-vehicles.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .about h2 {
+  max-width: 100vw;
   font-size: 50px;
   font-weight: 700;
   color: #fff;
@@ -925,6 +1106,7 @@ body {
   color: #ba0000;
   font-size: 20px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .about .slider-play-button:hover {
@@ -933,18 +1115,29 @@ body {
 .about .slider-container {
   position: absolute;
   top: 500px;
-  left: auto;
-  right: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 1200px;
   overflow: hidden;
 }
 .about .slider-container .slider-line {
   height: 426px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .about .slider-container .slider-line .slider-item {
+  min-width: 370px;
   width: 370px;
   height: 406px;
   margin: 0 15px;
@@ -990,6 +1183,8 @@ body {
   }
   .about h2 {
     font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .about .slider-container {
     top: 400px;
@@ -1039,18 +1234,30 @@ body {
     width: 100vw;
   }
   .about .slider-container .slider-line .slider-item {
+    min-width: 90vw;
     width: 90vw;
   }
   .about .slider-container .slider-line .slider-item img {
     width: 90vw;
   }
 }
+/* Express logisticks section */
+/*---------------------------------------------------------------*/
 .express-logistics .wrapper {
   margin-top: 104px;
   padding-bottom: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .express-logistics .wrapper .selection-block {
   width: 570px;
@@ -1058,13 +1265,28 @@ body {
   background-color: #ba0000;
 }
 .express-logistics .wrapper .selection-block .top-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .express-logistics .wrapper .selection-block .top-buttons .radio-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
 }
 .express-logistics .wrapper .selection-block .top-buttons .radio-button label {
@@ -1156,9 +1378,12 @@ body {
   border: none;
   color: #fff;
   padding: 0;
+  -webkit-transition-property: height;
   transition-property: height;
-  transition-timing-function: ease;
-  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   visibility: hidden;
 }
 .express-logistics .wrapper .selection-block .dropdown-links .dropdown-item .dropdown-list h3 {
@@ -1167,8 +1392,15 @@ body {
   letter-spacing: 1px;
 }
 .express-logistics .wrapper .selection-block .dropdown-links .dropdown-item .dropdown-list ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .express-logistics .wrapper .selection-block .dropdown-links .dropdown-item .dropdown-list ul li {
   margin: 10px 5px 0px 5px;
@@ -1193,9 +1425,18 @@ body {
   position: relative;
   width: 470px;
   height: 534px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .express-logistics .wrapper .styled-image::before {
   content: "";
@@ -1217,6 +1458,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  background: left bottom no-repeat url("../img/dhl_logo.png"), -webkit-linear-gradient(bottom, #ffcc00, transparent);
   background: left bottom no-repeat url("../img/dhl_logo.png"), linear-gradient(0deg, #ffcc00, transparent);
   background-size: 170px 50px, 100%;
 }
@@ -1275,15 +1517,26 @@ body {
     padding: 10px;
   }
 }
+/* Features section */
+/*------------------------------------------------------------------------*/
 .features {
   background-color: #ba0000;
   color: #fff;
   padding: 98px 0;
 }
 .features .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .features .wrapper article {
   width: 770px;
@@ -1315,6 +1568,7 @@ body {
   line-height: 50px;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .features .wrapper .learn-more-button:hover {
@@ -1335,8 +1589,13 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .features .wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1347,28 +1606,49 @@ body {
     font-size: 14px;
   }
 }
+/* Clients section */
+/*------------------------------------------------------------------*/
 .clients {
   padding: 70px 0;
 }
 .clients .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .clients .wrapper li {
   width: 270px;
   height: 128px;
   background-color: #f9f9f9;
   border: 2px solid #eedbdb;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .clients .wrapper li:hover {
   border-color: #ba0000;
 }
 .clients .wrapper li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -1389,21 +1669,38 @@ body {
     padding: 40px 0;
   }
   .clients .wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+/* Footer */
+/*------------------------------------------------------------------*/
 footer {
   height: 311px;
   padding-top: 58px;
+  background: url("../img/footer-background-left.png"), url("../img/footer-background-right.png"), -webkit-linear-gradient(left, #ba0000, #ba0000 10%, transparent 10%, transparent 90%, #ffcc00 90%, #ffcc00);
   background: url("../img/footer-background-left.png"), url("../img/footer-background-right.png"), linear-gradient(90deg, #ba0000, #ba0000 10%, transparent 10%, transparent 90%, #ffcc00 90%, #ffcc00);
   background-repeat: no-repeat;
   background-position: top 0px left 40px, top 0px right 40px, top left;
 }
 footer .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 footer .wrapper section {
   width: 270px;
@@ -1439,6 +1736,7 @@ footer .wrapper section ul li::before {
 footer .wrapper section ul li a {
   color: #777777;
   text-decoration: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 footer .wrapper section ul li a:visited {
@@ -1465,6 +1763,7 @@ footer .wrapper .social-media a:hover {
 
 @media screen and (max-width: 1740px) {
   footer {
+    background: -webkit-linear-gradient(left, #ba0000, #ba0000 2.5%, #e2e2e2 2.5%, #f0f0f0 97.5%, #ffcc00 97.5%, #ffcc00);
     background: linear-gradient(90deg, #ba0000, #ba0000 2.5%, #e2e2e2 2.5%, #f0f0f0 97.5%, #ffcc00 97.5%, #ffcc00);
     padding: 0;
     padding-top: 40px;
@@ -1473,9 +1772,16 @@ footer .wrapper .social-media a:hover {
     height: 100%;
     width: 95%;
     max-width: 1170px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   footer .wrapper section {
     width: 225px;
@@ -1509,22 +1815,33 @@ footer .wrapper .social-media {
 }
 @media screen and (max-width: 800px) {
   footer .wrapper {
-    justify-content: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 600px) {
   footer {
+    background: -webkit-linear-gradient(left, #ba0000, #ba0000 10%, #e2e2e2 10%, #f0f0f0 90%, #ffcc00 90%, #ffcc00);
     background: linear-gradient(90deg, #ba0000, #ba0000 10%, #e2e2e2 10%, #f0f0f0 90%, #ffcc00 90%, #ffcc00);
     padding-bottom: 20px;
   }
   footer .wrapper {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .wrapper section {
     width: 260px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
